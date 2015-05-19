@@ -5,8 +5,7 @@ describe package('openssh-server') do
 end
 
 describe port('22') do
-    it { should_not be_listening }
-end
+    it { should_not be_listening } end
 
 describe service('ssh') do
     it { should be_enabled }
